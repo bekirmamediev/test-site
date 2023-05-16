@@ -1,0 +1,276 @@
+:root{
+    --accent-color:#2196F3;
+    --text-color:#212121;
+    --white-header:#FFFFFF;
+    --paragraf-color:#757575;
+    --svg-color:#AFB1B8;
+    --dark-back:#2F303A;
+    --team-back:#F5F4FA;
+    --black-header:#000000;
+}
+
+html{
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+
+body{
+    color: var(--paragraf-color);
+    font-family: 'Roboto';
+    letter-spacing: 0.03em;
+
+    background-color: var(--white-header);
+}
+
+.list{
+    list-style: none;
+    margin: 0;
+
+}
+
+.container{
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact-list{
+    display: flex;
+    margin-left: auto;
+}
+
+.contact-list .item:not(:last-child){
+    margin-right: 30px;
+}
+
+.contact-link{
+    text-decoration: none;
+}
+
+.header-links{
+    display: flex;
+}
+
+.header-links .item:not(:last-child){
+    margin-right: 50px;
+}
+
+.logo {
+    color: var(--black-header) ;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+
+    margin-right: 93px;
+    
+}
+
+.accent-logo{
+    color:var(--accent-color)
+}
+
+.main-link{
+    color:var(--text-color);
+
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+}
+
+.contact-link{
+    color: var(--paragraf-color);
+}
+
+.main-link:hover,
+.main-link:focus{
+    color:var(--accent-color);
+}
+
+.main-nav{
+    display: flex;
+    align-items: baseline;
+
+}
+
+/*hero*/
+.section{
+    font-family: 'Roboto';
+    letter-spacing: 0.03em;
+
+}
+.hero-section{
+    background-color: var(--dark-back);
+    text-align: center;
+    color: var(--white-header);
+      
+}
+
+.hero-title{
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+}
+
+.button{
+    color: var(--white-header);
+    
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.875;
+
+    background-color: #2196F3;
+    width: 216px;
+    height: 50px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: 0;
+
+}
+
+/*advantages*/
+.hide-title{
+    display: none;
+}
+
+.adv-title{
+    color:var(--text-color);
+    
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+}
+
+.adv-paragraf{
+    font-size: 14px;
+    line-height: 24px;
+    
+}
+
+.list{
+    display: flex;
+}
+
+/*what we are doing*/
+.section-title{
+    color:var(--black-header);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+}
+
+/*team*/
+.team-section{
+    background-color: var(--team-back);
+}
+
+.team-name{
+    color:var(--text-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    
+}
+
+.team-position{
+    font-size: 16px;
+    line-height: 19px;
+
+    text-align: center;
+}
+
+.team-card .item{
+    width: 270px;
+}
+
+.team-card .item:not(:last-child){
+    margin-right: 30px;
+}
+
+.sm-list .item:not(:last-child){
+    margin-right: 10px;
+}
+
+.sm-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--svg-color);
+
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+}
+
+.sm-link:hover,
+.sm-link:focus{
+    background-color: var(--accent-color);
+    color: var(--white-header);
+}
+
+.sm-svg{
+    fill: currentColor;
+
+    width: 20px;
+    height: 20px;
+}
+
+
+/*compamy*/
+
+.company-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 170px;
+    height: 92px;
+
+    border: 1px solid var(--svg-color);
+    color: var(--svg-color);
+    border-radius: 4px;
+}
+
+.company-link:hover,
+.company-link:focus{
+    color: var(--accent-color);
+    border-color: var(--accent-color);
+}
+
+.company-icon{
+    width: 106px;
+    height: 60px;
+
+    fill: currentColor;
+
+}
+
+.company-list .item:not(:last-child){
+    margin-right: 30px;
+}
+
+
+/*foooter*/
+.footer{
+    background-color: var(--dark-back);
+}
+
+.footer-logo{
+    color: var(--white-header);
+}
